@@ -4,8 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include "Pyuron.dtsi"
 
-#include "gesture/zip_mouse_gesture.dtsi"
-#include "gesture/zip_mouse_gesture_L8.dtsi"
+
 #include "gesture/gesture_L8.dtsi"
 
 
