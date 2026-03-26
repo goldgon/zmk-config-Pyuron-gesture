@@ -103,7 +103,7 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-&kp ESCAPE          &lt 5 Q        &kp E      &kp U         &kp P                                               &kp D        &lt 7 T         &lt 6 R       &lt 5 W       &mkp MB1
+&lt 8 ESCAPE          &lt 5 Q        &kp E      &kp U         &kp P                                               &kp D        &lt 7 T         &lt 6 R       &lt 5 W       &mkp MB1
 
 &mt LSHIFT TAB      &lt 3 O        &lt 2 A      &lt 1 I         &mt LCTRL F                             &mt RCTRL H  &lt 1 Y         &lt 2 K       &lt 3 S       &mt LEFT_SHIFT B
 
