@@ -190,7 +190,16 @@
             >;
         };
 
+        layer_8 {
+            bindings = <
+&kp F1  &msc SCRL_RIGHT  &mmv MOVE_Y(-200)     &msc SCRL_UP  &kp F5                             &kp F6  &kp F7  &mmv MOVE_Y(-300)  &kp F9  &mkp MB1
 
+&none   &mmv MOVE_X(-200) &mmv MOVE_Y(200)    &mmv MOVE_X(200)   &none                   &none    &mmv MOVE_X(-300) &mmv MOVE_Y(300)    &mmv MOVE_X(300)   &none
+
+&trans  &msc SCRL_LEFT   &trans           &msc SCRL_DOWN  &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans  &trans    &trans  &trans                  &trans  &trans
+            >;
+        };
 
 
 
