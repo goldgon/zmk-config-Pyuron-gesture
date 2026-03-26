@@ -4,11 +4,72 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "keycode_japanese.h"
 
+#include <mouse-gesture.dtsi>
+
 
 #define MOUSE 6
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 2000 // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 40    // default: 10
+
+
+&zip_mouse_gesture {
+    stroke-size = <150>;
+    enable-eager-mode;
+
+    history_back {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LA(LEFT)>;
+    };
+
+    history_forward {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LA(RIGHT)>;
+    };
+
+    close_tab {
+        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        bindings = <&kp LC(W)>;
+    };
+
+    new_tab {
+        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        bindings = <&kp LC(T)>;
+    };
+
+    app_switcher {
+        pattern = <GESTURE_DOWN GESTURE_UP>;
+        bindings = <&kp LG(TAB)>;
+    };
+
+    virtual_desktop_prev {
+        pattern = <GESTURE_LEFT GESTURE_DOWN>;
+        bindings = <&kp LG(LC(LEFT))>;
+    };
+
+    virtual_desktop_next {
+        pattern = <GESTURE_RIGHT GESTURE_DOWN>;
+        bindings = <&kp LG(LC(RIGHT))>;
+    };
+
+    // left {
+    //     gesture = <GESTURE_LEFT>;
+    //     bindings = <&kp LEFT>;
+    // };
+    // right {
+    //     gesture = <GESTURE_RIGHT>;
+    //     bindings = <&kp RIGHT>;
+    // };
+    // up {
+    //     gesture = <GESTURE_UP>;
+    //     bindings = <&kp UP>;
+    // };
+    // down {
+    //     gesture = <GESTURE_DOWN>;
+    //     bindings = <&kp DOWN>;
+    // };
+};
+
 
 &mmv {
     time-to-max-speed-ms = <0>;
@@ -114,7 +175,7 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-&lt 8 ESCAPE          &lt 5 Q        &kp E      &kp U         &kp P                                               &kp D        &lt 7 T         &lt 6 R       &lt 5 W       &mkp MB1
+&mouse_gesture_kp 0 ESCAPE          &lt 5 Q        &kp E      &kp U         &kp P                                               &kp D        &lt 7 T         &lt 6 R       &lt 5 W       &mkp MB1
 
 &mt LSHIFT TAB      &lt 3 O        &lt 2 A      &lt 1 I         &mt LCTRL F                             &mt RCTRL H  &lt 1 Y         &lt 2 K       &lt 3 S       &mt LEFT_SHIFT B
 
