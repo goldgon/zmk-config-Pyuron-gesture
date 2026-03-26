@@ -19,5 +19,14 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
+    - name: zmk-input-processor-keybind
+      remote: zettaface
+      revision: main
+    - name: zmk-mouse-gesture
+      remote: kot149
+      revision: v1
+    - name: zmk-listeners
+      remote: ssbb
+      revision: v1
   self:
     path: config
