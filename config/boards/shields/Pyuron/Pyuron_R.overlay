@@ -46,7 +46,10 @@
 
 
 
-
+    layer-7 {
+        layers = <7>;
+        input-processors = <&zip_mouse_gesture>, <&zip_xy_scaler 1 5>, <&pointer_accel>;
+    };
 
 
 
