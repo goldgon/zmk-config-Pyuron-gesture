@@ -51,6 +51,7 @@
  //                          <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,   //スクロールのY軸反転
                            <&zip_scroll_scaler 1 10>;                           //スクロール量を1/5倍
     };
+};
 
 &spi0 {
     status = "okay";
