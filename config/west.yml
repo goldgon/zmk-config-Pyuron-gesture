@@ -14,6 +14,11 @@ manifest:
       url-base: https://github.com/kot149
     - name: ssbb
       url-base: https://github.com/ssbb
+
+    - name: iwk7273
+      url-base: https://github.com/iwk7273
+
+      
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -34,6 +39,13 @@ manifest:
     - name: zmk-listeners
       remote: ssbb
       revision: v1
+
+    - name: zmk-feature-sensor_rotation
+      remote: iwk7273
+      revision: main
+    - name: zmk-feature-xy_clipper
+      remote: iwk7273
+      revision: main
 
   self:
     path: config
