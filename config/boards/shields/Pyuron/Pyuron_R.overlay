@@ -43,6 +43,15 @@
     status = "okay";
     device = <&trackball_R>;
 
+
+
+
+    input-processors = &zip_mouse_gesture
+
+
+
+
+
     scroller {
         layers = <1 2 3>;
         input-processors = <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
