@@ -7,6 +7,16 @@
 
 #define MOUSE 6
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000 // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 40    // default: 10
+
+&mmv {
+    time-to-max-speed-ms = <0>;
+    acceleration-exponent = <0>;
+    trigger-period-ms = <10>;
+    delay-ms = <0>;
+};
+
 &mt { 
     flavor = "balanced"; 
     tapping-term-ms = <200>;
