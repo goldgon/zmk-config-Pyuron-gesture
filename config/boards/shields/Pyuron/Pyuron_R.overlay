@@ -3,6 +3,7 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include "Pyuron.dtsi"
+#include "gesture/gesture_L8.dtsi"
 
 &default_transform {
     col-offset = <6>;
