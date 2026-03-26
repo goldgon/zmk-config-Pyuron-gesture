@@ -13,6 +13,21 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 40    // default: 10
 
 
+
+&mouse_gesture_kp {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <250>;
+    flavor = "balanced";
+};
+
+&mouse_gesture_mkp {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <250>;
+    flavor = "balanced";
+};
+
+
+
 &zip_mouse_gesture {
     stroke-size = <150>;
     enable-eager-mode;
