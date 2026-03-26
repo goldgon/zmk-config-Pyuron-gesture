@@ -5,6 +5,14 @@
 #include <input/processors.dtsi>
 #include <physical_layouts.dtsi>
 
+
+#define CLIPPER_THRESHOLD 40    // スクロール時に斜めの値をクリップ
+
+
+
+
+
+
 &uicr {
     nfct-pins-as-gpios;
 };
